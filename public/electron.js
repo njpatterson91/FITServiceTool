@@ -1,5 +1,5 @@
 // Module to control the application lifecycle and the native browser window.
-const { app, BrowserWindow, protocol } = require("electron");
+const { app, BrowserWindow, protocol, shell } = require("electron");
 const path = require("path");
 const url = require("url");
 
@@ -13,6 +13,12 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
     },
+  });
+
+  mainWindow.webContents.on("new-window", function (event, url) {
+    event.preventDefault();
+    // This will open a new Electron window to load the url.
+    shell.openExternal(url);
   });
 
   // In production, set the initial browser path to the local bundle generated
