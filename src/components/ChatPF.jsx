@@ -1,18 +1,7 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
 import { chatPF, customerInfo } from "../store/atoms";
 import { useRecoilState } from "recoil";
 import { useState } from "react";
-import {
-  TextField,
-  Container,
-  Grid,
-  MenuItem,
-  FormControl,
-} from "@mui/material";
+import { TextField, Modal, Typography, Button, Box } from "@mui/material";
 
 const style = {
   position: "absolute",
@@ -105,7 +94,7 @@ export default function ChatPF() {
           />
 
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            Copy to clipboard and give to chat pf.
           </Typography>
           <Button
             onClick={() => {
