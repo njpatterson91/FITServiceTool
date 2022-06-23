@@ -60,7 +60,7 @@
   },
   "build": {
     "appId": "xyz.njpatterson.fit-desktop",
-    "productName": "My Electron App",
+    "productName": "Fit Service Aid",
     "files": [
       "build/**/*",
       "node_modules/**/*"
