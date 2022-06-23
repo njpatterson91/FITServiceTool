@@ -11,6 +11,7 @@ import ServiceCall from "../components/ServiceCall";
 import DocumentCallStep from "../components/DocumentCallStep";
 import ClosingandSurvey from "../components/ClosingandSurvey";
 import ChatPF from "../components/ChatPF";
+import ToolTabController from "../components/ToolTabController";
 
 function MainPage() {
   const [step] = useRecoilState(stage);
@@ -52,7 +53,8 @@ function MainPage() {
         </Grid>
         {/* Useful links and notes */}
         <Grid item xs={6}>
-          <NotesAndLinks />
+          <ToolTabController />
+          {/* <NotesAndLinks /> */}
         </Grid>
       </Grid>
       <ChatPF />
