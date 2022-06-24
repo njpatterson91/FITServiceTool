@@ -8,7 +8,7 @@ import ChatPF from "../components/ChatPF";
 import ToolTabController from "../components/ToolTabController";
 import CallFlow from "../features/callFlow/CallFlow";
 import CallFlowControls from "../features/callFlow/components/CallFlowControls";
-
+import ToolTipModal from "../components/ToolTipModal";
 function MainPage() {
   const [stepInfo] = useRecoilState(infoCards);
 
@@ -31,6 +31,7 @@ function MainPage() {
         </Grid>
       </Grid>
       <ChatPF />
+      <ToolTipModal />
     </>
   );
 }

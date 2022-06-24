@@ -34,3 +34,13 @@ export const chatPF = atom({
   key: "chatPF",
   default: false,
 });
+
+export const imageToolTip = atom({
+  key: "imageToolTip",
+  default: false,
+});
+
+export const imageLocation = atom({
+  key: "imageLocation",
+  default: "",
+});
