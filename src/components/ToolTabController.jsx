@@ -5,6 +5,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Notes from "./Notes";
+import Links from "./Links";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -42,11 +43,7 @@ export default function ToolTabController() {
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
+        <Tabs value={value} onChange={handleChange}>
           <Tab label="Notes" />
           <Tab label="Important Links" />
           <Tab label="Ship Tools" />
@@ -56,7 +53,7 @@ export default function ToolTabController() {
         <Notes />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Links />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three

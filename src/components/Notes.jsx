@@ -11,23 +11,21 @@ export default function Notes() {
     console.log(customer);
   };
   return (
-    <>
-      <Paper elevation={5} style={{ padding: 8 }}>
-        <Paper>
-          <TextField
-            id="outlined-multiline-static"
-            label="Notes"
-            name="notes"
-            multiline
-            rows={8}
-            onChange={onChangeHandler}
-            value={customer["notes"]}
-            fullWidth
-          />
-        </Paper>
-        <SaveBookings />
-        <Button onClick={() => setPF(true)}>Contact Chat PF</Button>
+    <Paper elevation={5} style={{ padding: 8 }}>
+      <Paper>
+        <TextField
+          id="outlined-multiline-static"
+          label="Notes"
+          name="notes"
+          multiline
+          rows={8}
+          onChange={onChangeHandler}
+          value={customer["notes"]}
+          fullWidth
+        />
       </Paper>
-    </>
+      <SaveBookings />
+      <Button onClick={() => setPF(true)}>Contact Chat PF</Button>
+    </Paper>
   );
 }
