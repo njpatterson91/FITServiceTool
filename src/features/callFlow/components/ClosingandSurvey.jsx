@@ -1,4 +1,4 @@
-import { customerInfo } from "../store/atoms";
+import { customerInfo } from "../../../store/atoms";
 import { useRecoilState } from "recoil";
 import { Paper, Typography } from "@mui/material";
 

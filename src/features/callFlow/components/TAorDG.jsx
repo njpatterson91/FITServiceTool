@@ -1,4 +1,4 @@
-import { customerInfo } from "../store/atoms";
+import { customerInfo } from "../../../store/atoms";
 import { useRecoilState } from "recoil";
 import TAVerify from "./TAVerify";
 import DGVerify from "./DGVerify";

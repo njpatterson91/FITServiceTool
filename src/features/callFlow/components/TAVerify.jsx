@@ -1,20 +1,20 @@
 import { Container, Grid, Typography, Button } from "@mui/material";
-import { useState } from "react";
-import OnBooking from "./OnBooking";
-import VerifyButton from "./VerifyButton";
+import VerifyButton from "../../../components/VerifyButton";
 
-export default function DGVerify() {
-  const [onBooking, setOnBooking] = useState();
+import { useState } from "react";
+
+export default function TAVerify() {
+  const [takeover, setTakeover] = useState();
   return (
     <Container maxWidth="sm">
       <Typography variant="p" component="p" align="center" marginTop={5}>
-        Is the caller on the booking or the Direct Info
+        Is the TA calling to take over Direct Booking
       </Typography>
       <Grid container spacing={2} align="center" marginTop={3}>
         <Grid item xs={6}>
           <Button
             onClick={() => {
-              setOnBooking(true);
+              setTakeover(true);
             }}
           >
             Yes
@@ -23,19 +23,28 @@ export default function DGVerify() {
         <Grid item xs={6}>
           <Button
             onClick={() => {
-              setOnBooking(false);
+              setTakeover(false);
             }}
           >
             No
           </Button>
         </Grid>
       </Grid>
-      {onBooking == true && <OnBooking />}
-      {onBooking == false && (
+      {takeover === true && (
         <Container maxWidth="sm" align="center">
           <Typography variant="p" component="p" align="center" marginTop={5}>
-            You must do a full verification. Booking#, Ship and Sail date, PIN#.
-            If caller is missing pin# verify all names and dates of birth
+            Caller Provides: Booking#, Ship and Sail Date, ALL Names and DOB,
+            PIN#, Cabin#
+          </Typography>
+
+          <VerifyButton />
+        </Container>
+      )}
+      {takeover === false && (
+        <Container maxWidth="sm" align="center">
+          <Typography variant="p" component="p" align="center" marginTop={5}>
+            Caller provides CLIA/IATA. If CLIA/IATA is not on the booking caller
+            provides agency phone#
           </Typography>
 
           <VerifyButton />
