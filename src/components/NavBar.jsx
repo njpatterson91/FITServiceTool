@@ -2,17 +2,16 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import HomeIcon from "@mui/icons-material/Home";
 import { Button, IconButton } from "@mui/material";
 import { verified, customerInfo, stage } from "../store/atoms";
-import { useRecoilState } from "recoil";
+import { useSetRecoilState, useRecoilState } from "recoil";
 import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   const [verifiedStatus, setVerifiedStatus] = useRecoilState(verified);
-  const [customer, setCustomer] = useRecoilState(customerInfo);
-  const [step, setStep] = useRecoilState(stage);
+  const setCustomer = useSetRecoilState(customerInfo);
+  const setStep = useSetRecoilState(stage);
 
   const resetState = () => {
     setVerifiedStatus(false);

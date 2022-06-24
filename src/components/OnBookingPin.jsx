@@ -29,7 +29,7 @@ export default function OnBookingPin() {
           </Button>
         </Grid>
       </Grid>
-      {pinVerified == true && (
+      {pinVerified === true && (
         <Container maxWidth="sm" align="center">
           <Typography variant="p" component="p" margin={1} align="center">
             Customer Fully Verified. Recap ship and sail date.
@@ -38,7 +38,7 @@ export default function OnBookingPin() {
           <VerifyButton />
         </Container>
       )}
-      {pinVerified == false && (
+      {pinVerified === false && (
         <Container maxWidth="sm" align="center">
           <Typography variant="p" component="p" margin={1} align="center">
             Caller Provides: Booking#, Ship and Sail date, One name and DOB.

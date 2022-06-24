@@ -1,11 +1,11 @@
 import { TextField, Button, Paper } from "@mui/material";
 import SaveBookings from "./SaveBooking";
-import { useRecoilState } from "recoil";
+import { useSetRecoilState, useRecoilState } from "recoil";
 import { customerInfo, chatPF } from "../store/atoms";
 
 export default function Notes() {
   const [customer, setCustomer] = useRecoilState(customerInfo);
-  const [pf, setPF] = useRecoilState(chatPF);
+  const setPF = useSetRecoilState(chatPF);
   const onChangeHandler = (e) => {
     setCustomer({ ...customer, [e.target.name]: e.target.value });
     console.log(customer);

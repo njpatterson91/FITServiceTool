@@ -10,9 +10,6 @@ import { db } from "../db";
 import { useLiveQuery } from "dexie-react-hooks";
 
 export default function ContactTable() {
-  function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-  }
   const data = useLiveQuery(() => db.bookings.toArray());
   console.log(data);
   if (!data) return null;

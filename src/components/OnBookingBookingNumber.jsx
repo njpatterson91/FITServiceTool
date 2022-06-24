@@ -31,8 +31,8 @@ export default function OnBookingBookingNumber() {
           </Button>
         </Grid>
       </Grid>
-      {bookingVerified == true && <OnBookingPin />}
-      {bookingVerified == false && (
+      {bookingVerified === true && <OnBookingPin />}
+      {bookingVerified === false && (
         <Container maxWidth="sm" align="center">
           <Typography variant="p" component="p" margin={1} align="center">
             Caller Provides: Ship and Sail date, one name and dob, PIN#. You

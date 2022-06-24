@@ -1,12 +1,12 @@
 import { customerInfo } from "../../../store/atoms";
-import { useRecoilState } from "recoil";
+import { useRecoilValue } from "recoil";
 import { Paper, Typography } from "@mui/material";
 
 export default function ClosingandSurvey() {
-  const [customer, setCustomer] = useRecoilState(customerInfo);
+  const customer = useRecoilValue(customerInfo);
   return (
     <>
-      {customer.bookingType == "TA" && (
+      {customer.bookingType === "TA" && (
         <Paper style={{ margin: "5%" }}>
           <Typography>
             It was a pleasure assisting you, can you please remain on this line
@@ -15,7 +15,7 @@ export default function ClosingandSurvey() {
           </Typography>
         </Paper>
       )}
-      {customer.bookingType == "DG" && (
+      {customer.bookingType === "DG" && (
         <Paper style={{ margin: "5%" }}>
           <Typography>
             As a thank you for calling, we've arranged for you to receive an

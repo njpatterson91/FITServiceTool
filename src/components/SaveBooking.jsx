@@ -1,11 +1,11 @@
 import { Button } from "@mui/material";
 import { customerInfo } from "../store/atoms";
-import { useRecoilState } from "recoil";
+import { useRecoilValue } from "recoil";
 import { db } from "../db";
 import { useLiveQuery } from "dexie-react-hooks";
 
 export default function SaveBookings() {
-  const [customer, setCustomer] = useRecoilState(customerInfo);
+  const customer = useRecoilValue(customerInfo);
 
   const data = useLiveQuery(() => db.bookings.toArray());
   console.log(data);

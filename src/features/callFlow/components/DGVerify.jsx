@@ -30,8 +30,8 @@ export default function DGVerify() {
           </Button>
         </Grid>
       </Grid>
-      {onBooking == true && <OnBooking />}
-      {onBooking == false && (
+      {onBooking === true && <OnBooking />}
+      {onBooking === false && (
         <Container maxWidth="sm" align="center">
           <Typography variant="p" component="p" align="center" marginTop={5}>
             You must do a full verification. Booking#, Ship and Sail date, PIN#.
