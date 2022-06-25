@@ -25,20 +25,21 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <img
-            src={require("../tooltipAssets/addVaccination.png")}
-            alt="tooltop"
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
-        </Box>
+        {image && (
+          <Box sx={style}>
+            <img
+              src={require("../tooltipAssets/" + image)}
+              alt="tooltop"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </Box>
+        )}
       </Modal>
     </div>
   );

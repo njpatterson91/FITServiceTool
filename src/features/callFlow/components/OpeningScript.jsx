@@ -4,8 +4,8 @@ import TypographyWithTT from "../../../components/TypographyWithTT";
 const script = [
   {
     text: "Thanks for calling Carnival, my name is ______. Who do I have the pleasure of speaking with?",
-    tooltip: true,
-    tooltipSRC: "leYeet",
+    tooltip: false,
+    tooltipSRC: "",
   },
   {
     text: "Thank you,___ TA/DG's_NAME___. May I please have your booking number?",

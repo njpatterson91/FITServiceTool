@@ -15,7 +15,7 @@ export default function TypographyWithTT(props) {
           <OpenInNewIcon
             fontSize="small"
             onClick={() => {
-              setImage("");
+              setImage(props.script.tooltipSRC);
               setOpen(true);
             }}
           />

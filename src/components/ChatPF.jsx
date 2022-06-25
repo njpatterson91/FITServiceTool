@@ -92,10 +92,6 @@ export default function ChatPF() {
             value={remainingInfo["Concern"]}
             style={{ margin: "10px" }}
           />
-
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Copy to clipboard and give to chat pf.
-          </Typography>
           <Button
             onClick={() => {
               navigator.clipboard.writeText(
