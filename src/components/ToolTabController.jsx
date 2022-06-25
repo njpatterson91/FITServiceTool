@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Notes from "./Notes";
 import Links from "./Links";
 import CabinCategories from "../features/tools/CabinCategories";
+import { Button } from "@mui/material";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,6 +49,7 @@ export default function ToolTabController() {
           <Tab label="Notes" />
           <Tab label="Important Links" />
           <Tab label="Ship Tools" />
+          <Button>Test</Button>
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
