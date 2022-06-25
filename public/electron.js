@@ -32,6 +32,7 @@ function createWindow() {
         slashes: true,
       })
     : "http://localhost:3000";
+
   mainWindow.loadURL(appURL);
 }
 

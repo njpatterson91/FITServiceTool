@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Notes from "./Notes";
 import Links from "./Links";
+import CabinCategories from "../features/tools/CabinCategories";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,7 +57,7 @@ export default function ToolTabController() {
         <Links />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <CabinCategories />
       </TabPanel>
     </Box>
   );
