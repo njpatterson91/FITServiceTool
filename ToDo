@@ -7,3 +7,7 @@ Finish ship tools section make links dynamic based off ship chosen.
 Fix view previous contacts screen.
 
 Create a how to use the tool document or video.
+
+Clean up project before initial release(Refactor project structure, naming if applicable).
+
+Start writing tests.
