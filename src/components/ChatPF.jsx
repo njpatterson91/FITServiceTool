@@ -1,7 +1,7 @@
 import { chatPF, customerInfo } from "../store/atoms";
 import { useRecoilState } from "recoil";
 import { useState } from "react";
-import { TextField, Modal, Typography, Button, Box } from "@mui/material";
+import { TextField, Modal, Button, Box } from "@mui/material";
 
 const style = {
   position: "absolute",

@@ -11,3 +11,5 @@ Create a how to use the tool document or video.
 Clean up project before initial release(Refactor project structure, naming if applicable).
 
 Start writing tests.
+
+Change database to sqlite.
