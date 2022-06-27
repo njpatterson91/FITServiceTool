@@ -24,7 +24,7 @@ export default function CabinCategories() {
       <Typography>{category}</Typography>
       <Button
         onClick={() => {
-          setCategory(categories[0][findCategory.toUpperCase()]);
+          setCategory(categories[findCategory.toUpperCase()]);
         }}
       >
         Search

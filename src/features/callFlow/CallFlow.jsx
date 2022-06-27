@@ -1,25 +1,23 @@
 import { stage } from "../../store/atoms";
 import { useRecoilValue } from "recoil";
-import OpeningScript from "./components/OpeningScript";
+import CallFlowScriptView from "./components/CallFlowScriptView";
 import TAorDG from "./components/TAorDG";
-import VerifyingInfo from "./components/VerifyingInfo";
-import ServiceCall from "./components/ServiceCall";
-import DocumentCallStep from "./components/DocumentCallStep";
 import ClosingandSurvey from "./components/ClosingandSurvey";
+const scripting = require("../../json/scripting.json");
 
 export default function CallFlow() {
   const step = useRecoilValue(stage);
   switch (step) {
     case 0:
-      return <OpeningScript />;
+      return <CallFlowScriptView script={scripting.opening} />;
     case 1:
       return <TAorDG />;
     case 2:
-      return <VerifyingInfo />;
+      return <CallFlowScriptView script={scripting.verifyAddInfo} />;
     case 3:
-      return <ServiceCall />;
+      return <CallFlowScriptView script={scripting.serviceCall} />;
     case 4:
-      return <DocumentCallStep />;
+      return <CallFlowScriptView script={scripting.documenting} />;
     case 5:
       return <ClosingandSurvey />;
     default:

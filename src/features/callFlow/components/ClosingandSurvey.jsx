@@ -6,8 +6,16 @@ export default function ClosingandSurvey() {
   const customer = useRecoilValue(customerInfo);
   return (
     <>
+      {customer.bookingType === "" && (
+        <Paper style={{ margin: "4%", padding: "2%" }} elevation={10}>
+          <Typography>
+            ** Please select Travel Advisor or Direct Guest from booking type to
+            view appropriate scripting. **
+          </Typography>
+        </Paper>
+      )}
       {customer.bookingType === "TA" && (
-        <Paper style={{ margin: "5%" }}>
+        <Paper style={{ margin: "4%", padding: "2%" }} elevation={10}>
           <Typography>
             It was a pleasure assisting you, can you please remain on this line
             for a brief survey about my service on this call? Have a FUn-TASTIC
@@ -16,7 +24,7 @@ export default function ClosingandSurvey() {
         </Paper>
       )}
       {customer.bookingType === "DG" && (
-        <Paper style={{ margin: "5%" }}>
+        <Paper style={{ margin: "4%", padding: "2%" }} elevation={10}>
           <Typography>
             As a thank you for calling, we've arranged for you to receive an
             exciting discount offer from Hilton Grand Vacations which includes
