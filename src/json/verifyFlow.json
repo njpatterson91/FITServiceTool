@@ -1,120 +1,172 @@
 {
-  "start": {
-    "question": "Is the caller on the booking or the direct Info",
-    "verify": false,
-    "button1": {
-      "text": "Yes",
-      "nextSteps": {
-        "question": "Is the caller on the booking or the Direct Info",
-        "verify": false,
-        "button1": {
-          "text": "On Booking",
-          "nextSteps": {
-            "question": "Did they provide the Booking Number",
-            "verify": false,
-            "button1": {
-              "text": "Yes",
-              "nextSteps": {
-                "question": "Did they provide the pin",
-                "verify": false,
-                "button1": {
-                  "text": "Yes",
-                  "nextSteps": {
-                    "question": "You can verify",
-                    "verify": true,
-                    "button1": {
-                      "text": ""
-                    },
-                    "button2": {
-                      "text": ""
-                    }
-                  }
-                },
-                "button2": {
-                  "text": "No",
-                  "nextSteps": {
-                    "question": "Caller provides: Name of ship and date of sailing, and their full name and date of birth.",
-                    "verify": false,
-                    "button1": {
-                      "text": "Provided",
-                      "nextSteps": {
-                        "question": "You can verify",
-                        "verify": true
+  "DG": {
+    "start": {
+      "question": "Is the caller on the booking or the direct Info",
+      "verify": false,
+      "button1": {
+        "text": "Yes",
+        "nextSteps": {
+          "question": "Is the caller on the booking or the Direct Info",
+          "verify": false,
+          "button1": {
+            "text": "On Booking",
+            "nextSteps": {
+              "question": "Did they provide the Booking Number",
+              "verify": false,
+              "button1": {
+                "text": "Yes",
+                "nextSteps": {
+                  "question": "Did they provide the pin",
+                  "verify": false,
+                  "button1": {
+                    "text": "Yes",
+                    "nextSteps": {
+                      "question": "You can verify",
+                      "verify": true,
+                      "button1": {
+                        "text": ""
+                      },
+                      "button2": {
+                        "text": ""
                       }
-                    },
-                    "button2": {
-                      "text": "Cant Provide",
+                    }
+                  },
+                  "button2": {
+                    "text": "No",
+                    "nextSteps": {
+                      "question": "Caller provides: Name of ship and date of sailing, and their full name and date of birth.",
                       "verify": false,
-                      "nextSteps": {
-                        "question": "You can not verify"
+                      "button1": {
+                        "text": "Provided",
+                        "nextSteps": {
+                          "question": "You can verify",
+                          "verify": true
+                        }
+                      },
+                      "button2": {
+                        "text": "Cant Provide",
+                        "verify": false,
+                        "nextSteps": {
+                          "question": "You can not verify"
+                        }
                       }
                     }
                   }
                 }
-              }
-            },
-            "button2": {
-              "text": "No",
-              "nextSteps": {
-                "question": "Caller needs to provide: Ship and Sail date, one name and dob, PIN#. You Provide Booking#",
-                "verify": false,
-                "button1": {
-                  "text": "Provided",
-                  "nextSteps": {
-                    "question": "You can verify",
-                    "verify": true
-                  }
-                },
-                "button2": {
-                  "text": "Cant Provide",
+              },
+              "button2": {
+                "text": "No",
+                "nextSteps": {
+                  "question": "Caller needs to provide: Ship and Sail date, one name and dob, PIN#. You Provide Booking#",
                   "verify": false,
-                  "nextSteps": {
-                    "question": "You can not verify"
+                  "button1": {
+                    "text": "Provided",
+                    "nextSteps": {
+                      "question": "You can verify",
+                      "verify": true
+                    }
+                  },
+                  "button2": {
+                    "text": "Cant Provide",
+                    "verify": false,
+                    "nextSteps": {
+                      "question": "You can not verify"
+                    }
                   }
                 }
               }
             }
-          }
-        },
-        "button2": {
-          "text": "Direct Info",
-          "nextSteps": {
-            "question": "Caller needs to provide: Booking#, Ship and Sail Date, PIN#. If the caller is missing the pin ALL Names and DOB",
-            "verify": false,
-            "button1": {
-              "text": "Provided",
-              "nextSteps": {
-                "question": "You can verify",
-                "verify": true
-              }
-            },
-            "button2": {
-              "text": "Cant Provide",
-              "nextSteps": {
-                "question": "You can not verify"
+          },
+          "button2": {
+            "text": "Direct Info",
+            "nextSteps": {
+              "question": "Caller needs to provide: Booking#, Ship and Sail Date, PIN#. If the caller is missing the pin ALL Names and DOB",
+              "verify": false,
+              "button1": {
+                "text": "Provided",
+                "nextSteps": {
+                  "question": "You can verify",
+                  "verify": true
+                }
+              },
+              "button2": {
+                "text": "Cant Provide",
+                "nextSteps": {
+                  "question": "You can not verify"
+                }
               }
             }
           }
         }
-      }
-    },
-    "button2": {
-      "text": "no",
-      "nextSteps": {
-        "question": "Caller needs to provide: Booking#, Ship and Sail Date, All names and DOB, Pin#",
-        "verify": false,
-        "button1": {
-          "text": "Provided",
-          "nextSteps": {
-            "question": "You can verify",
-            "verify": true
-          }
-        },
-        "button2": {
-          "text": "Cant Provide",
+      },
+      "button2": {
+        "text": "no",
+        "nextSteps": {
+          "question": "Caller needs to provide: Booking#, Ship and Sail Date, All names and DOB, Pin#",
           "verify": false,
-          "nextSteps": {
-            "question": "You can not verify"
+          "button1": {
+            "text": "Provided",
+            "nextSteps": {
+              "question": "You can verify",
+              "verify": true
+            }
+          },
+          "button2": {
+            "text": "Cant Provide",
+            "verify": false,
+            "nextSteps": {
+              "question": "You can not verify"
+            }
+          }
+        }
+      }
+    }
+  },
+  "TA": {
+    "start": {
+      "question": "Is the TA calling to take over a Direct Booking",
+      "verify": false,
+      "button1": {
+        "text": "Yes",
+        "verify": false,
+        "nextSteps": {
+          "question": "Caller Provides: Booking#, Ship and Sail Date, ALL Names and DOB, PIN#, Cabin#",
+          "verify": false,
+          "button1": {
+            "text": "Provided",
+            "nextSteps": {
+              "question": "You can verify",
+              "verify": true
+            }
+          },
+          "button2": {
+            "text": "Cant Provide",
+            "verify": false,
+            "nextSteps": {
+              "question": "You can not verify"
+            }
+          }
+        }
+      },
+      "button2": {
+        "text": "No",
+        "verify": false,
+        "nextSteps": {
+          "question": "Caller provides CLIA/IATA. If CLIA/IATA is not on the booking caller provides agency phone#",
+          "verify": false,
+          "button1": {
+            "text": "Provided",
+            "nextSteps": {
+              "question": "You can verify",
+              "verify": true
+            }
+          },
+          "button2": {
+            "text": "Cant Provide",
+            "verify": false,
+            "nextSteps": {
+              "question": "You can not verify"
+            }
           }
         }
       }

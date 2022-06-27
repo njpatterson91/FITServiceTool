@@ -5,7 +5,7 @@ import { verified, stage } from "../../../store/atoms";
 const verifyFlow = require("../../../json/verifyFlow.json");
 
 export default function DGVerify() {
-  const [step, setStep] = useState(verifyFlow.start);
+  const [step, setStep] = useState(verifyFlow.DG.start);
   const [currentStage, setStage] = useRecoilState(stage);
   const verifyCaller = useSetRecoilState(verified);
   return (

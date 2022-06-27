@@ -1,55 +1,58 @@
 import { Container, Grid, Typography, Button } from "@mui/material";
-import VerifyButton from "../../../components/VerifyButton";
-
 import { useState } from "react";
+import { useSetRecoilState, useRecoilState } from "recoil";
+import { verified, stage } from "../../../store/atoms";
+const verifyFlow = require("../../../json/verifyFlow.json");
 
 export default function TAVerify() {
-  const [takeover, setTakeover] = useState();
+  const [step, setStep] = useState(verifyFlow.TA.start);
+  const [currentStage, setStage] = useRecoilState(stage);
+  const verifyCaller = useSetRecoilState(verified);
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" style={{ overflow: "auto", height: 250 }}>
       <Typography variant="p" component="p" align="center" marginTop={5}>
-        Is the TA calling to take over Direct Booking
+        {step.question}
       </Typography>
+
       <Grid container spacing={2} align="center" marginTop={3}>
-        <Grid item xs={6}>
-          <Button
-            onClick={() => {
-              setTakeover(true);
-            }}
-          >
-            Yes
-          </Button>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            onClick={() => {
-              setTakeover(false);
-            }}
-          >
-            No
-          </Button>
-        </Grid>
+        {step.verify === false && (
+          <>
+            {" "}
+            <Grid item xs={6}>
+              <Button
+                onClick={() => {
+                  setStep(step.button1.nextSteps);
+                  console.log(step);
+                }}
+              >
+                {step.button1.text}
+              </Button>
+            </Grid>
+            <Grid item xs={6}>
+              <Button
+                onClick={() => {
+                  setStep(step.button2.nextSteps);
+                  console.log(step);
+                }}
+              >
+                {step.button2.text}
+              </Button>
+            </Grid>{" "}
+          </>
+        )}
+        {step.verify === true && (
+          <Grid item xs={12}>
+            <Button
+              onClick={() => {
+                verifyCaller(true);
+                setStage(currentStage + 1);
+              }}
+            >
+              Verify
+            </Button>
+          </Grid>
+        )}
       </Grid>
-      {takeover === true && (
-        <Container maxWidth="sm" align="center">
-          <Typography variant="p" component="p" align="center" marginTop={5}>
-            Caller Provides: Booking#, Ship and Sail Date, ALL Names and DOB,
-            PIN#, Cabin#
-          </Typography>
-
-          <VerifyButton />
-        </Container>
-      )}
-      {takeover === false && (
-        <Container maxWidth="sm" align="center">
-          <Typography variant="p" component="p" align="center" marginTop={5}>
-            Caller provides CLIA/IATA. If CLIA/IATA is not on the booking caller
-            provides agency phone#
-          </Typography>
-
-          <VerifyButton />
-        </Container>
-      )}
     </Container>
   );
 }
