@@ -1,0 +1,60 @@
+{
+  "start": {
+    "question": "Is the caller on the booking or the direct Info",
+    "verify": false,
+    "button1": {
+      "text": "Yes",
+      "nextSteps": {
+        "question": "Is the caller on the booking or the Direct Info",
+        "verify": false,
+        "button1": {
+          "text": "On Booking",
+          "nextSteps": {
+            "question": "Did they provide the Booking Number",
+            "verify": false,
+            "button1": {
+              "text": "Yes",
+              "nextSteps": {
+                "question": "Did they provide the pin",
+                "verify": false,
+                "button1": {
+                  "text": "Yes",
+                  "nextSteps": {
+                    "question": "You can verify",
+                    "verify": true,
+                    "button1": {
+                      "text": ""
+                    },
+                    "button2": {
+                      "text": ""
+                    }
+                  }
+                },
+                "button2": {
+                  "text": "No",
+                  "question": "Caller provides: Name of ship and date of sailing, and their full name and date of birth."
+                }
+              }
+            },
+            "button2": {
+              "text": "No",
+              "nextSteps": {
+                "question": "Caller needs to provide: Ship and Sail date, one name and dob, PIN#. You Provide Booking#"
+              }
+            }
+          }
+        },
+        "button2": {
+          "text": "Direct Info",
+          "nextSteps": {
+            "question": "Caller needs to provide: Booking#, Ship and Sail Date, PIN#. If the caller is missing the pin ALL Names and DOB"
+          }
+        }
+      }
+    },
+    "button2": {
+      "text": "no",
+      "nextSteps": {}
+    }
+  }
+}
