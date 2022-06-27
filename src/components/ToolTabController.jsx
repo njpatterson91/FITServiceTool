@@ -8,6 +8,7 @@ import Notes from "./Notes";
 import Links from "./Links";
 import CabinCategories from "../features/tools/CabinCategories";
 import ShipSelector from "../features/tools/components/ShipSelector";
+import ShipLinks from "../features/tools/components/ShipLinks";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,6 +60,7 @@ export default function ToolTabController() {
         <Links />
       </TabPanel>
       <TabPanel value={value} index={2}>
+        <ShipLinks />
         <CabinCategories />
       </TabPanel>
     </Box>

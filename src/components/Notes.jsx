@@ -8,7 +8,6 @@ export default function Notes() {
   const setPF = useSetRecoilState(chatPF);
   const onChangeHandler = (e) => {
     setCustomer({ ...customer, [e.target.name]: e.target.value });
-    console.log(customer);
   };
   return (
     <Paper elevation={5} style={{ padding: 8 }}>

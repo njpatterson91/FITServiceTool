@@ -22,7 +22,6 @@ export default function DGVerify() {
               <Button
                 onClick={() => {
                   setStep(step.button1.nextSteps);
-                  console.log(step);
                 }}
               >
                 {step.button1.text}
@@ -32,7 +31,6 @@ export default function DGVerify() {
               <Button
                 onClick={() => {
                   setStep(step.button2.nextSteps);
-                  console.log(step);
                 }}
               >
                 {step.button2.text}

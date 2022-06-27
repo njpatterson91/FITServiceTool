@@ -28,7 +28,6 @@ export default function ChatPF() {
   const handleClose = () => setOpen(false);
   const onChangeHandler = (e) => {
     setCustomer({ ...customer, [e.target.name]: e.target.value });
-    console.log(customer);
   };
   const onChangeLocalHandler = (e) => {
     setRemainingInfo({ ...remainingInfo, [e.target.name]: e.target.value });

@@ -31,12 +31,12 @@ export default function NavBar() {
         style={{ backgroundColor: verifiedStatus ? "blue" : "red" }}
       >
         <Toolbar>
-          <IconButton>
-            <HomeIcon
-              onClick={() => {
-                navigate("/");
-              }}
-            />
+          <IconButton
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            <HomeIcon />
           </IconButton>
 
           <Button

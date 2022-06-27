@@ -1,4 +1,4 @@
-import { TextField, Typography, Button } from "@mui/material";
+import { TextField, Typography, Button, Grid } from "@mui/material";
 import { useState } from "react";
 
 const categories = require("../../json/cabinCategories.json");
@@ -13,22 +13,30 @@ export default function CabinCategories() {
 
   return (
     <>
-      <TextField
-        type="text"
-        name="catgory"
-        label="Search Category"
-        onChange={onChangeLocalHandler}
-        value={findCategory}
-        style={{ margin: "10px" }}
-      />
+      <Grid container>
+        <Grid>
+          <TextField
+            type="text"
+            name="catgory"
+            label="Search Category"
+            onChange={onChangeLocalHandler}
+            value={findCategory}
+            style={{ margin: "10px" }}
+            size={"small"}
+          />
+        </Grid>
+        <Grid alignItems="stretch" style={{ display: "flex" }}>
+          <Button
+            onClick={() => {
+              setCategory(categories[findCategory.toUpperCase()]);
+            }}
+          >
+            Search
+          </Button>
+        </Grid>
+      </Grid>
+
       <Typography>{category}</Typography>
-      <Button
-        onClick={() => {
-          setCategory(categories[findCategory.toUpperCase()]);
-        }}
-      >
-        Search
-      </Button>
     </>
   );
 }

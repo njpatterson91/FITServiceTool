@@ -31,6 +31,7 @@ export default function Links() {
             onClick={() => {
               window.open(link.link);
             }}
+            key={link.text}
           >
             {link.text}
           </Button>

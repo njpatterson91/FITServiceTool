@@ -13,7 +13,6 @@ function BookingHeader() {
   const [customer, setCustomer] = useRecoilState(customerInfo);
   const onChangeHandler = (e) => {
     setCustomer({ ...customer, [e.target.name]: e.target.value });
-    console.log(customer);
   };
   return (
     <>

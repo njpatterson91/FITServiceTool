@@ -11,7 +11,6 @@ import { useLiveQuery } from "dexie-react-hooks";
 
 export default function ContactTable() {
   const data = useLiveQuery(() => db.bookings.toArray());
-  console.log(data);
   if (!data) return null;
   return (
     <TableContainer component={Paper}>

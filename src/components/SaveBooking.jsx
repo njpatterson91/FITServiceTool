@@ -8,7 +8,6 @@ export default function SaveBookings() {
   const customer = useRecoilValue(customerInfo);
 
   const data = useLiveQuery(() => db.bookings.toArray());
-  console.log(data);
 
   async function addNote() {
     try {
@@ -18,7 +17,6 @@ export default function SaveBookings() {
         bookingType: customer.bookingType,
         notes: customer.notes,
       });
-      console.log(id);
     } catch (error) {
       console.log(error);
     }
