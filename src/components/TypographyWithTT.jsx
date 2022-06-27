@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import HelpIcon from "@mui/icons-material/Help";
 import { imageToolTip, imageLocation } from "../store/atoms";
 import { useRecoilState } from "recoil";
 
@@ -12,7 +12,7 @@ export default function TypographyWithTT(props) {
       <>
         <Typography margin padding>
           {props.script.text + "  "}
-          <OpenInNewIcon
+          <HelpIcon
             fontSize="small"
             onClick={() => {
               setImage(props.script.tooltipSRC);

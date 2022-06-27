@@ -32,14 +32,46 @@
                 },
                 "button2": {
                   "text": "No",
-                  "question": "Caller provides: Name of ship and date of sailing, and their full name and date of birth."
+                  "nextSteps": {
+                    "question": "Caller provides: Name of ship and date of sailing, and their full name and date of birth.",
+                    "verify": false,
+                    "button1": {
+                      "text": "Provided",
+                      "nextSteps": {
+                        "question": "You can verify",
+                        "verify": true
+                      }
+                    },
+                    "button2": {
+                      "text": "Cant Provide",
+                      "verify": false,
+                      "nextSteps": {
+                        "question": "You can not verify"
+                      }
+                    }
+                  }
                 }
               }
             },
             "button2": {
               "text": "No",
               "nextSteps": {
-                "question": "Caller needs to provide: Ship and Sail date, one name and dob, PIN#. You Provide Booking#"
+                "question": "Caller needs to provide: Ship and Sail date, one name and dob, PIN#. You Provide Booking#",
+                "verify": false,
+                "button1": {
+                  "text": "Provided",
+                  "nextSteps": {
+                    "question": "You can verify",
+                    "verify": true
+                  }
+                },
+                "button2": {
+                  "text": "Cant Provide",
+                  "verify": false,
+                  "nextSteps": {
+                    "question": "You can not verify"
+                  }
+                }
               }
             }
           }
@@ -47,14 +79,45 @@
         "button2": {
           "text": "Direct Info",
           "nextSteps": {
-            "question": "Caller needs to provide: Booking#, Ship and Sail Date, PIN#. If the caller is missing the pin ALL Names and DOB"
+            "question": "Caller needs to provide: Booking#, Ship and Sail Date, PIN#. If the caller is missing the pin ALL Names and DOB",
+            "verify": false,
+            "button1": {
+              "text": "Provided",
+              "nextSteps": {
+                "question": "You can verify",
+                "verify": true
+              }
+            },
+            "button2": {
+              "text": "Cant Provide",
+              "nextSteps": {
+                "question": "You can not verify"
+              }
+            }
           }
         }
       }
     },
     "button2": {
       "text": "no",
-      "nextSteps": {}
+      "nextSteps": {
+        "question": "Caller needs to provide: Booking#, Ship and Sail Date, All names and DOB, Pin#",
+        "verify": false,
+        "button1": {
+          "text": "Provided",
+          "nextSteps": {
+            "question": "You can verify",
+            "verify": true
+          }
+        },
+        "button2": {
+          "text": "Cant Provide",
+          "verify": false,
+          "nextSteps": {
+            "question": "You can not verify"
+          }
+        }
+      }
     }
   }
 }
