@@ -2,16 +2,13 @@ import { Button } from "@mui/material";
 import { customerInfo } from "../store/atoms";
 import { useRecoilValue } from "recoil";
 import { db } from "../db";
-import { useLiveQuery } from "dexie-react-hooks";
 
 export default function SaveBookings() {
   const customer = useRecoilValue(customerInfo);
 
-  const data = useLiveQuery(() => db.bookings.toArray());
-
   async function addNote() {
     try {
-      const id = await db.bookings.add({
+      await db.bookings.add({
         bookingNumber: customer.bookingNumber,
         contactName: customer.name,
         bookingType: customer.bookingType,
