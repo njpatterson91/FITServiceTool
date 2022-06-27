@@ -3,68 +3,80 @@
     {
       "text": "Thanks for calling Carnival, my name is ______. Who do I have the pleasure of speaking with?",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "green"
     },
     {
       "text": "Thank you,___ TA/DG's_NAME___. May I please have your booking number?",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "green"
     },
     {
       "text": "** Proceed to pull up booking in Navigator.**",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     },
     {
       "text": "** While waiting on NAVI, can ask how your day is going etc. **",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     }
   ],
   "documenting": [
     {
       "text": "**Please remember that anything you said or actioned on a call should be documented in the booking history. The only exception is if the action is auto time stamped in the booking history**",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     },
     {
       "text": "**Documenting should take place with guest still on the call and should be concise. We also do not want to advise the guest to hold during this time or place the guest on hold. A good trick is to continuosly document the booking, especially if you are advising of multiple items.**",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     }
   ],
   "serviceCall": [
     {
       "text": "**Please make sure you qualify the need of the caller based on your discovery questions and service the call appropriately.**",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     },
     {
       "text": "**Always remember to recap any important information to the guests.**",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     },
     {
       "text": "**Be conscious of appropriate hold and transfer procedures.**",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     }
   ],
   "verifyAddInfo": [
     {
       "text": "**Once you have appropriately qualified the booking, please move immediately to the guest info tab to confirmm there is info regarding the guest's email addres and phone number. Only one set of info is required per booking per call.",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     },
     {
       "text": "If there is not vaccination status on Guest Info Tab say: and to confirm, all guests are fully vaccinated?",
       "tooltip": false,
-      "tooltipSRC": ""
+      "tooltipSRC": "",
+      "backgroundColor": "red"
     },
     {
-      "text": " Then enter comment: Vaxed if vaccinated next to pax code section.",
+      "text": "Then enter comment: Vaxed if vaccinated next to pax code section.",
       "tooltip": true,
-      "tooltipSRC": "addVaccination.png"
+      "tooltipSRC": "addVaccination.png",
+      "backgroundColor": "red"
     }
   ]
 }

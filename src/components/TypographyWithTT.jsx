@@ -9,7 +9,12 @@ export default function TypographyWithTT(props) {
 
   if (props.script.tooltip) {
     return (
-      <>
+      <div
+        style={{
+          backgroundColor: props.script.backgroundColor,
+          borderRadius: "5px",
+        }}
+      >
         <Typography margin padding>
           {props.script.text + "  "}
           <HelpIcon
@@ -20,13 +25,20 @@ export default function TypographyWithTT(props) {
             }}
           />
         </Typography>
-      </>
+      </div>
     );
   } else {
     return (
-      <Typography margin padding>
-        {props.script.text}
-      </Typography>
+      <div
+        style={{
+          backgroundColor: props.script.backgroundColor,
+          borderRadius: "5px",
+        }}
+      >
+        <Typography margin padding>
+          {props.script.text}
+        </Typography>
+      </div>
     );
   }
 }
