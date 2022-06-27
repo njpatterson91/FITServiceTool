@@ -1,11 +1,11 @@
 import { Typography } from "@mui/material";
 import HelpIcon from "@mui/icons-material/Help";
 import { imageToolTip, imageLocation } from "../store/atoms";
-import { useRecoilState } from "recoil";
+import { useSetRecoilState } from "recoil";
 
 export default function TypographyWithTT(props) {
-  const [open, setOpen] = useRecoilState(imageToolTip);
-  const [image, setImage] = useRecoilState(imageLocation);
+  const setOpen = useSetRecoilState(imageToolTip);
+  const setImage = useSetRecoilState(imageLocation);
 
   if (props.script.tooltip) {
     return (
