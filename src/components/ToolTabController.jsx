@@ -3,12 +3,15 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
+import { TextField } from "@mui/material";
 import Box from "@mui/material/Box";
 import Notes from "./Notes";
 import Links from "./Links";
 import CabinCategories from "../features/tools/CabinCategories";
 import ShipSelector from "../features/tools/components/ShipSelector";
 import ShipLinks from "../features/tools/components/ShipLinks";
+import { cabinNumber } from "../store/atoms";
+import { useRecoilState } from "recoil";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

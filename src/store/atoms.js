@@ -49,3 +49,8 @@ export const shipCode = atom({
   key: "shipCode",
   default: "",
 });
+
+export const cabinNumber = atom({
+  key: "cabinNumber",
+  default: "",
+});

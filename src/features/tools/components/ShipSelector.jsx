@@ -24,7 +24,7 @@ export default function ShipSelector() {
         onChange={handleChange}
       >
         {ships.ships.map((ship) => (
-          <MenuItem value={ship} key={ship}>
+          <MenuItem value={ship} key={ship.name}>
             {ship.name}
           </MenuItem>
         ))}

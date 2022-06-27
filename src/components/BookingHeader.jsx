@@ -56,8 +56,12 @@ function BookingHeader() {
                 onChange={onChangeHandler}
                 value={customer["bookingType"]}
               >
-                <MenuItem value={"DG"}>Direct Guest</MenuItem>
-                <MenuItem value={"TA"}>Travel Advisor</MenuItem>
+                <MenuItem value={"DG"} key={"DG"}>
+                  Direct Guest
+                </MenuItem>
+                <MenuItem value={"TA"} key={"TA"}>
+                  Travel Advisor
+                </MenuItem>
               </TextField>
             </Grid>
           </Grid>

@@ -15,7 +15,7 @@ const style = {
   width: "90%",
 };
 
-export default function BasicModal() {
+export default function ToolTipModal() {
   const [open, setOpen] = useRecoilState(imageToolTip);
   const image = useRecoilValue(imageLocation);
   const handleClose = () => setOpen(false);

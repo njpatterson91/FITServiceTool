@@ -1,9 +1,10 @@
 import { Button, Paper, Stack, Typography } from "@mui/material";
 import { useRecoilValue } from "recoil";
-import { shipCode } from "../../../store/atoms";
+import { shipCode, cabinNumber } from "../../../store/atoms";
 
 export default function ShipLinks() {
   const shipInfo = useRecoilValue(shipCode);
+  const cabin = useRecoilValue(cabinNumber);
   const links = [
     {
       text: "Ship Home Page",
@@ -46,6 +47,19 @@ export default function ShipLinks() {
                 {link.text}
               </Button>
             ))}
+            {/* <Button
+              sx={{ margin: 1 }}
+              variant="contained"
+              component="p"
+              align="center"
+              onClick={() => {
+                window.open(
+                  `https://www.carnival.com/common/CCLUS/ships/ship/htmlDeckplans.aspx?&shipCode=VS&panorama=True#stateroom/${cabin}`
+                );
+              }}
+            >
+              View Cabin
+            </Button> */}
           </Stack>
         </Paper>
       )}
