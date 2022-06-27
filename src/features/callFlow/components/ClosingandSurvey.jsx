@@ -7,11 +7,18 @@ export default function ClosingandSurvey() {
   return (
     <>
       {customer.bookingType === "" && (
-        <Paper style={{ margin: "4%", padding: "2%" }} elevation={10}>
-          <Typography>
-            ** Please select Travel Advisor or Direct Guest from booking type to
-            view appropriate scripting. **
-          </Typography>
+        <Paper style={{ margin: "4%", padding: "3px" }} elevation={10}>
+          <div
+            style={{
+              backgroundColor: "purple",
+              borderRadius: "5px",
+            }}
+          >
+            <Typography>
+              ** Please select Travel Advisor or Direct Guest from booking type
+              to view appropriate scripting. **
+            </Typography>
+          </div>
         </Paper>
       )}
       {customer.bookingType === "TA" && (
