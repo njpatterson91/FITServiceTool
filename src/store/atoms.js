@@ -44,3 +44,8 @@ export const imageLocation = atom({
   key: "imageLocation",
   default: "",
 });
+
+export const shipCode = atom({
+  key: "shipCode",
+  default: "",
+});

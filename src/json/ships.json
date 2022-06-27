@@ -1,177 +1,204 @@
 {
-  "ecstasy": {
-    "code": "EC",
-    "capacity": 2156,
-    "tonage": 70367,
-    "year": 1991,
-    "class": "Fantasy"
-  },
-  "elation": {
-    "code": "EL",
-    "capacity": 2190,
-    "tonage": 71909,
-    "year": 1998,
-    "class": "Fantasy"
-  },
-  "paradise": {
-    "code": "PA",
-    "capacity": 2124,
-    "tonage": 71925,
-    "year": 1998,
-    "class": "Fantasy"
-  },
-  "spirit": {
-    "code": "SP",
-    "capacity": 2124,
-    "tonage": 88500,
-    "year": 2001,
-    "class": "Spirit"
-  },
-  "pride": {
-    "code": "PR",
-    "capacity": 2124,
-    "tonage": 88500,
-    "year": 2002,
-    "class": "Spirit"
-  },
-  "legend": {
-    "code": "LE",
-    "capacity": 2124,
-    "tonage": 88500,
-    "year": 2002,
-    "class": "Spirit"
-  },
-  "miracle": {
-    "code": "MI",
-    "capacity": 2124,
-    "tonage": 88500,
-    "year": 2004,
-    "class": "Spirit"
-  },
-  "conquest": {
-    "code": "CQ",
-    "capacity": 2980,
-    "tonage": 110000,
-    "year": 2002,
-    "class": "Conquest"
-  },
-  "glory": {
-    "code": "GL",
-    "capacity": 2980,
-    "tonage": 110000,
-    "year": 2003,
-    "class": "Conquest"
-  },
-  "valor": {
-    "code": "VA",
-    "capacity": 2980,
-    "tonage": 110000,
-    "year": 2004,
-    "class": "Conquest"
-  },
-  "liberty": {
-    "code": "LI",
-    "capacity": 2974,
-    "tonage": 110000,
-    "year": 2005,
-    "class": "Conquest"
-  },
-  "freedom": {
-    "code": "FD",
-    "capacity": 2980,
-    "tonage": 110000,
-    "year": 2007,
-    "class": "Conquest"
-  },
-  "Splendor": {
-    "code": "SL",
-    "capacity": 3012,
-    "tonage": 113300,
-    "year": 2008,
-    "class": "Splendor"
-  },
-  "dream": {
-    "code": "DR",
-    "capacity": 3646,
-    "tonage": 130000,
-    "year": 2009,
-    "class": "Dream"
-  },
-  "magic": {
-    "code": "MC",
-    "capacity": 36490,
-    "tonage": 130000,
-    "year": 2011,
-    "class": "Dream"
-  },
-  "breeze": {
-    "code": "BR",
-    "capacity": 3690,
-    "tonage": 130000,
-    "year": 2012,
-    "class": "Dream"
-  },
-  "sunshine": {
-    "code": "SH",
-    "capacity": 3002,
-    "tonage": 102853,
-    "year": 2013,
-    "class": "Sunshine"
-  },
-  "sunrise": {
-    "code": "SN",
-    "capacity": 2984,
-    "tonage": 101509,
-    "year": 2019,
-    "class": "Sunshine"
-  },
-  "radiance": {
-    "code": "RD",
-    "capacity": 2984,
-    "tonage": 101509,
-    "year": 2021,
-    "class": "Sunshine"
-  },
-  "vista": {
-    "code": "VS",
-    "capacity": 3934,
-    "tonage": 133500,
-    "year": 2016,
-    "class": "Vista"
-  },
-  "horizon": {
-    "code": "HZ",
-    "capacity": 3960,
-    "tonage": 133500,
-    "year": 2018,
-    "class": "Vista"
-  },
-  "panorama": {
-    "code": "PO",
-    "capacity": 4008,
-    "tonage": 133500,
-    "year": 2019,
-    "class": "Vista"
-  },
-  "mardi gras": {
-    "code": "MD",
-    "capacity": 5282,
-    "tonage": 180800,
-    "year": 2021,
-    "class": "Excel"
-  },
-  "celebration": {
-    "code": "CB",
-    "capacity": 5374,
-    "tonage": 182800,
-    "year": 2022,
-    "class": "Excel"
-  },
-  "jubilee": {
-    "code": "JB",
-    "capacity": 5374,
-    "tonage": 182800,
-    "year": 2023,
-    "class": "Ecxel"
-  }
+  "ships": [
+    {
+      "name": "ecstasy",
+      "code": "EC",
+      "capacity": 2156,
+      "tonage": 70367,
+      "year": 1991,
+      "class": "Fantasy"
+    },
+    {
+      "name": "elation",
+      "code": "EL",
+      "capacity": 2190,
+      "tonage": 71909,
+      "year": 1998,
+      "class": "Fantasy"
+    },
+    {
+      "name": "paradise",
+      "code": "PA",
+      "capacity": 2124,
+      "tonage": 71925,
+      "year": 1998,
+      "class": "Fantasy"
+    },
+    {
+      "name": "spirit",
+      "code": "SP",
+      "capacity": 2124,
+      "tonage": 88500,
+      "year": 2001,
+      "class": "Spirit"
+    },
+    {
+      "name": "pride",
+      "code": "PR",
+      "capacity": 2124,
+      "tonage": 88500,
+      "year": 2002,
+      "class": "Spirit"
+    },
+    {
+      "name": "legend",
+      "code": "LE",
+      "capacity": 2124,
+      "tonage": 88500,
+      "year": 2002,
+      "class": "Spirit"
+    },
+    {
+      "name": "miracle",
+      "code": "MI",
+      "capacity": 2124,
+      "tonage": 88500,
+      "year": 2004,
+      "class": "Spirit"
+    },
+    {
+      "name": "conquest",
+      "code": "CQ",
+      "capacity": 2980,
+      "tonage": 110000,
+      "year": 2002,
+      "class": "Conquest"
+    },
+    {
+      "name": "glory",
+      "code": "GL",
+      "capacity": 2980,
+      "tonage": 110000,
+      "year": 2003,
+      "class": "Conquest"
+    },
+    {
+      "name": "valor",
+      "code": "VA",
+      "capacity": 2980,
+      "tonage": 110000,
+      "year": 2004,
+      "class": "Conquest"
+    },
+    {
+      "name": "liberty",
+      "code": "LI",
+      "capacity": 2974,
+      "tonage": 110000,
+      "year": 2005,
+      "class": "Conquest"
+    },
+    {
+      "name": "freedom",
+      "code": "FD",
+      "capacity": 2980,
+      "tonage": 110000,
+      "year": 2007,
+      "class": "Conquest"
+    },
+    {
+      "name": "splendor",
+      "code": "SL",
+      "capacity": 3012,
+      "tonage": 113300,
+      "year": 2008,
+      "class": "Splendor"
+    },
+    {
+      "name": "dream",
+      "code": "DR",
+      "capacity": 3646,
+      "tonage": 130000,
+      "year": 2009,
+      "class": "Dream"
+    },
+    {
+      "name": "magic",
+      "code": "MC",
+      "capacity": 36490,
+      "tonage": 130000,
+      "year": 2011,
+      "class": "Dream"
+    },
+    {
+      "name": "breeze",
+      "code": "BR",
+      "capacity": 3690,
+      "tonage": 130000,
+      "year": 2012,
+      "class": "Dream"
+    },
+    {
+      "name": "sunshine",
+      "code": "SH",
+      "capacity": 3002,
+      "tonage": 102853,
+      "year": 2013,
+      "class": "Sunshine"
+    },
+    {
+      "name": "sunrise",
+      "code": "SN",
+      "capacity": 2984,
+      "tonage": 101509,
+      "year": 2019,
+      "class": "Sunshine"
+    },
+    {
+      "name": "radiance",
+      "code": "RD",
+      "capacity": 2984,
+      "tonage": 101509,
+      "year": 2021,
+      "class": "Sunshine"
+    },
+    {
+      "name": "vista",
+      "code": "VS",
+      "capacity": 3934,
+      "tonage": 133500,
+      "year": 2016,
+      "class": "Vista"
+    },
+    {
+      "name": "horizon",
+      "code": "HZ",
+      "capacity": 3960,
+      "tonage": 133500,
+      "year": 2018,
+      "class": "Vista"
+    },
+    {
+      "name": "panorama",
+      "code": "PO",
+      "capacity": 4008,
+      "tonage": 133500,
+      "year": 2019,
+      "class": "Vista"
+    },
+    {
+      "name": "mardi gras",
+      "code": "MD",
+      "capacity": 5282,
+      "tonage": 180800,
+      "year": 2021,
+      "class": "Excel"
+    },
+    {
+      "name": "celebration",
+      "code": "CB",
+      "capacity": 5374,
+      "tonage": 182800,
+      "year": 2022,
+      "class": "Excel"
+    },
+    {
+      "name": "jubilee",
+      "code": "JB",
+      "capacity": 5374,
+      "tonage": 182800,
+      "year": 2023,
+      "class": "Ecxel"
+    }
+  ]
 }

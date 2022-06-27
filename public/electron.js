@@ -7,7 +7,7 @@ const url = require("url");
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 700,
-    height: 950,
+    height: 970,
     // Set the path of an additional "preload" script that can be used to
     // communicate between node-land and browser-land.
     resizable: false,
