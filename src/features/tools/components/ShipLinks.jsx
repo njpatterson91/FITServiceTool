@@ -17,6 +17,10 @@ export default function ShipLinks() {
       text: "Dining Options",
       link: `https://www.carnival.com/cruise-food/?shipCode=${shipInfo.code}`,
     },
+    {
+      text: "Deck Plan",
+      link: `https://www.carnival.com/common/CCLUS/ships/ship/htmlDeckplans.aspx?&shipCode=${shipInfo.code}&panorama=True`,
+    },
   ];
   return (
     <>

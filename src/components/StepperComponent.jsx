@@ -4,7 +4,7 @@ import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import { stage } from "../store/atoms";
-import { useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 
 const steps = [
   "Opening The Call",
@@ -16,7 +16,10 @@ const steps = [
 ];
 
 export default function StepperComponent() {
-  const step = useRecoilValue(stage);
+  const [step, setStep] = useRecoilState(stage);
+  const handleClick = (index) => {
+    setStep(index);
+  };
   return (
     <Box sx={{ width: "100%" }}>
       <Stepper activeStep={step}>
@@ -24,7 +27,14 @@ export default function StepperComponent() {
           const stepProps = {};
           const labelProps = {};
           return (
-            <Step key={label} {...stepProps}>
+            <Step
+              key={label}
+              {...stepProps}
+              onClick={() => {
+                console.log(index);
+                handleClick(index);
+              }}
+            >
               <StepLabel {...labelProps}>{label}</StepLabel>
             </Step>
           );

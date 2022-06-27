@@ -23,6 +23,11 @@ export default function CabinCategories() {
             value={findCategory}
             style={{ margin: "10px" }}
             size={"small"}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                setCategory(categories[findCategory.toUpperCase()]);
+              }
+            }}
           />
         </Grid>
         <Grid alignItems="stretch" style={{ display: "flex" }}>
