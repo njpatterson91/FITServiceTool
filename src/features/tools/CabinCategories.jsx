@@ -1,7 +1,7 @@
 import { TextField, Typography, Button, Grid } from "@mui/material";
 import { useState } from "react";
 
-const categories = require("../../json/cabinCategories.json");
+import categories from "../../json/cabinCategories.json";
 
 export default function CabinCategories() {
   const [findCategory, setFindCategory] = useState("");

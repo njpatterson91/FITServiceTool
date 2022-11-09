@@ -4,7 +4,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { shipCode } from "../../../store/atoms";
-const ships = require("../../../json/ships.json");
+import ships from "../../../json/ships.json";
 
 export default function ShipSelector() {
   const [ship, setShip] = useRecoilState(shipCode);
@@ -12,6 +12,10 @@ export default function ShipSelector() {
   const handleChange = (event) => {
     setShip(event.target.value);
   };
+
+  const sortedShips = ships.ships.sort((a, b) =>
+    a.name > b.name ? 1 : b.name > a.name ? -1 : 0
+  );
 
   return (
     <FormControl sx={{ m: 1, minWidth: 130 }} size="small">
@@ -23,8 +27,8 @@ export default function ShipSelector() {
         label="Select-Ship"
         onChange={handleChange}
       >
-        {ships.ships.map((ship) => (
-          <MenuItem value={ship} key={ship.name}>
+        {sortedShips.map((ship, idx) => (
+          <MenuItem value={ship} key={idx}>
             {ship.name}
           </MenuItem>
         ))}

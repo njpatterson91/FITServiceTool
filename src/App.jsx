@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import MainPage from "./views/MainPage";
 import ContactsPage from "./views/ContactsPage";
 import { Paper } from "@mui/material";
+import React from "react";
 
 function App() {
   return (
@@ -12,7 +13,6 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
-      {/* <MainPage /> */}
     </Paper>
   );
 }

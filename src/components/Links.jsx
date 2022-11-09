@@ -22,7 +22,7 @@ export default function Links() {
   return (
     <Paper style={{ padding: 8, overflow: "auto", height: 250 }} elevation={5}>
       <Stack direction="row" sx={{ flexWrap: "wrap" }}>
-        {links.map((link) => (
+        {links.map((link, idx) => (
           <Button
             sx={{ margin: 1 }}
             variant="contained"
@@ -31,7 +31,7 @@ export default function Links() {
             onClick={() => {
               window.open(link.link);
             }}
-            key={link.text}
+            key={idx}
           >
             {link.text}
           </Button>

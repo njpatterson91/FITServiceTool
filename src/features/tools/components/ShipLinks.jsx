@@ -33,7 +33,7 @@ export default function ShipLinks() {
       {shipInfo !== "" && (
         <Paper style={{ padding: 8 }} elevation={5}>
           <Stack direction="row" sx={{ flexWrap: "wrap" }}>
-            {links.map((link) => (
+            {links.map((link, idx) => (
               <Button
                 sx={{ margin: 1 }}
                 variant="contained"
@@ -42,7 +42,7 @@ export default function ShipLinks() {
                 onClick={() => {
                   window.open(link.link);
                 }}
-                key={link.text}
+                key={idx}
               >
                 {link.text}
               </Button>

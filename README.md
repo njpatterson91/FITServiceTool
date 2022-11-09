@@ -1,24 +1,7 @@
-# FIT Service Aid
+# Tauri + React
 
-## What is it
+This template should help get you started developing with Tauri and React in Vite.
 
-FIT Service Aid is a tool to more easily service calls.
+## Recommended IDE Setup
 
-## Features
-
-- Call Flow Scripting tool.
-- Note taking tool.
-- Easy use quick links to important information.
-- View previous interactions.
-- Ship tools.
-
-## How to install
-
-Just double click the downloaded file and it will install.
-
-## How to build
-
-- clone the repository
-- cd into the cloned repository
-- run npm i to install dependancies(requires node and npm)
-- run npm run electron:package:win to build for windows
+- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)

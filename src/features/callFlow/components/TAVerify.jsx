@@ -2,7 +2,7 @@ import { Container, Grid, Typography, Button } from "@mui/material";
 import { useState } from "react";
 import { useSetRecoilState, useRecoilState } from "recoil";
 import { verified, stage } from "../../../store/atoms";
-const verifyFlow = require("../../../json/verifyFlow.json");
+import verifyFlow from "../../../json/verifyFlow.json";
 
 export default function TAVerify() {
   const [step, setStep] = useState(verifyFlow.TA.start);

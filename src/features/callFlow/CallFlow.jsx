@@ -3,7 +3,7 @@ import { useRecoilValue } from "recoil";
 import CallFlowScriptView from "./components/CallFlowScriptView";
 import TAorDG from "./components/TAorDG";
 import ClosingandSurvey from "./components/ClosingandSurvey";
-const scripting = require("../../json/scripting.json");
+import scripting from "../../json/scripting.json";
 
 export default function CallFlow() {
   const step = useRecoilValue(stage);

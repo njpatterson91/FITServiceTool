@@ -96,15 +96,20 @@ export default function ChatPF() {
               navigator.clipboard.writeText(
                 "BKG: " +
                   customer.bookingNumber +
+                  "\n" +
                   "FareCode: " +
                   remainingInfo.fareCode +
-                  " Penalty Status: " +
+                  "\n" +
+                  "Penalty Status: " +
                   remainingInfo.penalty +
-                  " Who is on the phone: " +
+                  "\n" +
+                  "Who is on the phone: " +
                   customer.name +
-                  " Mappers: " +
+                  "\n" +
+                  "Mappers: " +
                   remainingInfo.mappers +
-                  " Detailed Concern: " +
+                  "\n" +
+                  "Detailed Concern: " +
                   remainingInfo.concern
               );
               handleClose();

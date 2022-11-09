@@ -24,9 +24,9 @@ export default function ContactTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((row) => (
+          {data.map((row, idx) => (
             <TableRow
-              key={row.name}
+              key={idx}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th" scope="row">

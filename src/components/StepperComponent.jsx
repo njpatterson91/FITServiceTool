@@ -21,14 +21,21 @@ export default function StepperComponent() {
     setStep(index);
   };
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box
+      sx={{
+        width: "100%",
+        borderBottom: 2,
+        borderColor: "primary.main",
+        paddingBottom: 2,
+      }}
+    >
       <Stepper activeStep={step}>
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
           return (
             <Step
-              key={label}
+              key={index}
               {...stepProps}
               onClick={() => {
                 console.log(index);
