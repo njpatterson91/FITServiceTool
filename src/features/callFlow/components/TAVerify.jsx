@@ -10,6 +10,7 @@ export default function TAVerify() {
   const verifyCaller = useSetRecoilState(verified);
   return (
     <Container maxWidth="sm" style={{ overflow: "auto", height: 250 }}>
+      {/* Part to edit to add checkboxes */}
       <Typography variant="p" component="p" align="center" marginTop={5}>
         {step.question}
       </Typography>

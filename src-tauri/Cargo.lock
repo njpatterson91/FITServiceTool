@@ -3,16 +3,6 @@
 version = 3
 
 [[package]]
-name = "FITServiceToolTauri"
-version = "0.0.0"
-dependencies = [
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
-]
-
-[[package]]
 name = "adler"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -616,6 +606,16 @@ dependencies = [
  "libc",
  "redox_syscall",
  "windows-sys 0.42.0",
+]
+
+[[package]]
+name = "fitervice_tool_tauri"
+version = "0.0.0"
+dependencies = [
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
 ]
 
 [[package]]

@@ -29,7 +29,7 @@ export default function ShipSelector() {
       >
         {sortedShips.map((ship, idx) => (
           <MenuItem value={ship} key={idx}>
-            {ship.name}
+            {ship.name.charAt(0).toUpperCase() + ship.name.slice(1)}
           </MenuItem>
         ))}
       </Select>
