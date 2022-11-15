@@ -33,7 +33,7 @@ function MainPage() {
             container
             spacing={{ md: 1 }}
             direction={{ xs: "column", md: "row" }}
-            alignItems={"flex-start"}
+            alignItems={{ xs: "center", md: "flex-start" }}
             justifyContent={"center"}
           >
             <Grid item lg={6}>
