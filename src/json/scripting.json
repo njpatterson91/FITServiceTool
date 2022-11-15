@@ -78,5 +78,47 @@
       "tooltipSRC": "addVaccination.png",
       "backgroundColor": "purple"
     }
+  ],
+  "closingDG": [
+    {
+      "text": "As a thank you for calling, we've arranged for you to receive an exciting discount offer from Hilton Grand Vacations which includes $200 towards a future carnival cruise. May i transfer you for those brief details",
+      "tooltip": false,
+      "tooltipSRC": "",
+      "backgroundColor": "green"
+    },
+    {
+      "text": "If yes Transfer call to 70710 and remain on the line until the prompt that advises that the guest has been connected.",
+      "tooltip": true,
+      "tooltipSRC": "addVaccination.png",
+      "backgroundColor": "purple"
+    },
+    {
+      "text": "If no",
+      "tooltip": true,
+      "tooltipSRC": "addVaccination.png",
+      "backgroundColor": "purple"
+    },
+    {
+      "text": "It was a pleasure assisting you, can you please remain on this line for a brief survey about my service on this call? Have a Fun-TASTIC day!",
+      "tooltip": true,
+      "tooltipSRC": "addVaccination.png",
+      "backgroundColor": "green"
+    }
+  ],
+  "closingTA": [
+    {
+      "text": "It was a pleasure assisting you, can you please remain on this line for a brief survey about my service on this call? Have a Fun-TASTIC day!",
+      "tooltip": false,
+      "tooltipSRC": "",
+      "backgroundColor": "green"
+    }
+  ],
+  "warningClosing": [
+    {
+      "text": "Please select Travel Advisor or Direct Guest from booking type to view appropriate scripting.",
+      "tooltip": false,
+      "tooltipSRC": "",
+      "backgroundColor": "red"
+    }
   ]
 }

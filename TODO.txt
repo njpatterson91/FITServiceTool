@@ -1,0 +1,6 @@
+add this for travel advisor takover in call flow qualify 
+
+A travel agency may take over a direct booking made through any FIT direct channel as long as the transaction happens no later than 90 days after the booking is made or prior to the penalty period (whichever occurs first). If the booking is made within penalty period, the agency has 24 hours from the time the booking is made to call in and take over the reservation.
+
+The travel advisor will need to provide Service with all the pertinent booking information which includes: Booking number / Guest's name / Stateroom number / Sail Date.
+The travel advisor must be able to provide the PIN Number - this was provided by the direct at the time of booking; bookings made on carnival.com will not have a PIN number to provide. If there is no PIN Number or the travel advisor cannot provide one, the Service agent will contact the direct guest to verify that the booking take over is acceptable.

@@ -18,7 +18,7 @@ export default function ShipSelector() {
   );
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 130 }} size="small">
+    <FormControl sx={{ m: 1, minWidth: 150 }} size="small">
       <InputLabel id="ship-select-label">Select Ship</InputLabel>
       <Select
         labelId="ship-select-label"
@@ -29,7 +29,10 @@ export default function ShipSelector() {
       >
         {sortedShips.map((ship, idx) => (
           <MenuItem value={ship} key={idx}>
-            {ship.name.charAt(0).toUpperCase() + ship.name.slice(1)}
+            {ship.name.charAt(0).toUpperCase() +
+              ship.name.slice(1) +
+              " - " +
+              ship.code}
           </MenuItem>
         ))}
       </Select>

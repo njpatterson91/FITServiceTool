@@ -16,36 +16,37 @@ function MainPage() {
         container
         spacing={1}
         direction={"column"}
-        alignItems={"space-evenly"}
-        justifyContent={"space-evenly"}
+        alignItems={"center"}
+        justifyContent={"center"}
       >
-        <Grid item xs={1}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={1} alignItems={"center"} justifyContent={"center"}>
+          <Box paddingBottom={1} display={{ xs: "block", md: "none" }}>
+            <BookingHeader />
+          </Box>
           <Box paddingTop={1} display={{ xs: "block", md: "none" }}>
             <CallFlowControls />
-          </Box>
-        </Grid>
-        <Grid item xs={1} alignItems={"center"} justifyContent={"center"}>
-          <Box paddingBottom={1}>
-            <BookingHeader />
           </Box>
         </Grid>
         <Grid item>
           <Grid
             container
-            spacing={1}
+            spacing={{ md: 1 }}
             direction={{ xs: "column", md: "row" }}
             alignItems={"flex-start"}
             justifyContent={"center"}
           >
-            <Grid item lg={4}>
+            <Grid item lg={6}>
               <Box>
                 <Box display={{ xs: "none", md: "block" }} paddingTop={2}>
+                  <Box paddingBottom={4}>
+                    <BookingHeader />
+                  </Box>
                   <CallFlowControls />
                 </Box>
                 <CallFlow />
               </Box>
             </Grid>
-
             <Grid item xs={6}>
               <ToolTabController />
             </Grid>
