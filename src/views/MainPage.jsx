@@ -6,8 +6,20 @@ import ChatPF from "../components/ChatPF";
 import ToolTabController from "../components/ToolTabController";
 import CallFlow from "../features/callFlow/CallFlow";
 import CallFlowControls from "../features/callFlow/components/CallFlowControls";
+import IKnow from "../components/IKnow";
+import iKnow from "../json/iKnow.json";
+import data from "../features/tools/iKnowArr";
+import Fuse from "fuse.js";
 
 function MainPage() {
+  const options = {
+    includeScore: true,
+  };
+  console.log(data);
+  console.log(iKnow[data[0]]);
+  const fuse = new Fuse(data, options);
+  const result = fuse.search("carnivals youth");
+  console.log(result);
   return (
     <>
       <NavBar />
@@ -54,6 +66,7 @@ function MainPage() {
         </Grid>
       </Grid>
       <ChatPF />
+      <IKnow />
     </>
   );
 }

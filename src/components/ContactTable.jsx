@@ -9,22 +9,24 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { db } from "../db";
 import { useLiveQuery } from "dexie-react-hooks";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function ContactTable() {
   const data = useLiveQuery(() => db.bookings.toArray());
-  const del = async (index) => {
+  const deleteSavedNote = async (index) => {
     await db.bookings.delete(index);
   };
   if (!data) return null;
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table aria-label="previous contacts">
         <TableHead>
           <TableRow>
-            <TableCell>Booking Number</TableCell>
+            <TableCell align="left">Booking Number</TableCell>
             <TableCell align="left">Name</TableCell>
             <TableCell align="left">Type</TableCell>
             <TableCell align="left">Notes</TableCell>
+            <TableCell align="left"></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -39,15 +41,15 @@ export default function ContactTable() {
               <TableCell align="left">{row.contactName}</TableCell>
               <TableCell align="left">{row.bookingType}</TableCell>
               <TableCell align="left">{row.notes}</TableCell>
-              <Button
-                variant="outlined"
-                color="error"
-                onClick={() => {
-                  del(row.id);
-                }}
-              >
-                Delete
-              </Button>
+              <TableCell align="right">
+                <Button
+                  onClick={() => {
+                    deleteSavedNote(row.id);
+                  }}
+                >
+                  <DeleteIcon />
+                </Button>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

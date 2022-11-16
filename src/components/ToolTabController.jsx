@@ -52,7 +52,7 @@ export default function ToolTabController() {
         <Tabs value={value} onChange={handleChange}>
           <Tab label="Notes" />
           <Tab label="Links" />
-          <Tab label="Ship Tools" />
+          <Tab label="Tools" />
           <ShipSelector />
         </Tabs>
       </Box>
