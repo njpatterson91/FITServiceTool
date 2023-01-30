@@ -7,11 +7,14 @@ import { Button, IconButton } from "@mui/material";
 import { verified, customerInfo, stage } from "../store/atoms";
 import { useSetRecoilState, useRecoilState } from "recoil";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { iKnowStatus } from "../store/atoms";
 
 export default function NavBar() {
   const [verifiedStatus, setVerifiedStatus] = useRecoilState(verified);
   const setCustomer = useSetRecoilState(customerInfo);
   const setStep = useSetRecoilState(stage);
+  const [active, setActive] = useRecoilState(iKnowStatus);
 
   const resetState = () => {
     setVerifiedStatus(false);
@@ -58,7 +61,17 @@ export default function NavBar() {
               navigate("/contacts");
             }}
           >
-            View Prevous Contact's
+            View Previous Contact's
+          </Button>
+          <Button
+            variant="p"
+            component="p"
+            sx={{ flexGrow: 1 }}
+            onClick={() => {
+              setActive(true);
+            }}
+          >
+            Search iKnow ID's
           </Button>
         </Toolbar>
       </AppBar>

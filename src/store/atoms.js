@@ -35,6 +35,11 @@ export const chatPF = atom({
   default: false,
 });
 
+export const iKnowStatus = atom({
+  key: "iKnowStatus",
+  default: false,
+});
+
 export const imageToolTip = atom({
   key: "imageToolTip",
   default: false,

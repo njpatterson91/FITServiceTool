@@ -1,4 +1,4 @@
-import { TextField, Button, Paper } from "@mui/material";
+import { TextField, Button, Paper, Stack } from "@mui/material";
 import SaveBookings from "./SaveBooking";
 import { useSetRecoilState, useRecoilState } from "recoil";
 import { customerInfo, chatPF } from "../store/atoms";
@@ -10,21 +10,21 @@ export default function Notes() {
     setCustomer({ ...customer, [e.target.name]: e.target.value });
   };
   return (
-    <Paper elevation={5} style={{ padding: 8 }}>
-      <Paper>
+    <Paper style={{ padding: 8, overflow: "auto" }} elevation={5}>
+      <Stack direction="row" sx={{ flexWrap: "wrap" }}>
         <TextField
           id="outlined-multiline-static"
           label="Notes"
           name="notes"
           multiline
-          rows={8}
+          rows={7}
           onChange={onChangeHandler}
           value={customer["notes"]}
           fullWidth
         />
-      </Paper>
-      <SaveBookings />
-      <Button onClick={() => setPF(true)}>Contact Chat PF</Button>
+        <SaveBookings />
+        <Button onClick={() => setPF(true)}>Contact Chat PF</Button>
+      </Stack>
     </Paper>
   );
 }
