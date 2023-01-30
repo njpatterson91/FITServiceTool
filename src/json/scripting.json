@@ -61,7 +61,7 @@
   ],
   "verifyAddInfo": [
     {
-      "text": "Once you have appropriately qualified the booking, please move immediately to the guest info tab to confirmm there is info regarding the guest's email addres and phone number. Only one set of info is requipurple per booking per call.",
+      "text": "Once you have appropriately qualified the booking, please move immediately to the guest info tab to confirmm there is info regarding the guest's email address and phone number. Only one set of info is requipurple per booking per call.",
       "tooltip": false,
       "tooltipSRC": "",
       "backgroundColor": "purple"
