@@ -8,7 +8,7 @@ export default function CallFlowScriptView({ script }) {
         margin: "2%",
         padding: "0px",
       }}
-      elevation={10}
+      elevation={5}
     >
       {script.map((item, idx) => (
         <TypographyWithTT script={item} key={idx} />

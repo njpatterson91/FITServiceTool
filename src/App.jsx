@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import MainPage from "./views/MainPage";
 import ContactsPage from "./views/ContactsPage";
 import { Paper } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 
 function App() {
   return (

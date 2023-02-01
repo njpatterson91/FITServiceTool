@@ -120,5 +120,13 @@
       "tooltipSRC": "",
       "backgroundColor": "red"
     }
+  ],
+  "taOrdg": [
+    {
+      "text": "Please select Travel Advisor or Direct Guest from booking type to view appropriate scripting.",
+      "tooltip": false,
+      "tooltipSRC": "",
+      "backgroundColor": "red"
+    }
   ]
 }

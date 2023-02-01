@@ -42,7 +42,7 @@ export default function IKnow() {
   };
 
   return (
-    <div>
+    <Box>
       <Modal
         open={open}
         onClose={handleClose}
@@ -97,6 +97,6 @@ export default function IKnow() {
           </Box>
         </Box>
       </Modal>
-    </div>
+    </Box>
   );
 }

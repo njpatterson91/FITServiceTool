@@ -2,9 +2,8 @@ import {
   TextField,
   Container,
   Grid,
-  Typography,
   MenuItem,
-  FormControl,
+  FormControl
 } from "@mui/material";
 import { customerInfo } from "../store/atoms";
 import { useRecoilState } from "recoil";
@@ -17,15 +16,6 @@ function BookingHeader() {
   return (
     <>
       <Container>
-        <Typography
-          variant="h5"
-          component="h1"
-          margin={1}
-          align="center"
-          sx={{ textDecoration: "underline" }}
-        >
-          Enter Booking Info
-        </Typography>
         <FormControl fullWidth>
           <Grid container spacing={2}>
             <Grid item xs={4}>

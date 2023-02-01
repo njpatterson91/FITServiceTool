@@ -7,7 +7,6 @@ import { Button, IconButton } from "@mui/material";
 import { verified, customerInfo, stage } from "../store/atoms";
 import { useSetRecoilState, useRecoilState } from "recoil";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import { iKnowStatus } from "../store/atoms";
 
 export default function NavBar() {
