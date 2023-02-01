@@ -34,7 +34,7 @@ export default function ChatPF() {
   };
 
   return (
-    <div>
+    <Box>
       <Modal
         open={open}
         onClose={handleClose}
@@ -119,6 +119,6 @@ export default function ChatPF() {
           </Button>
         </Box>
       </Modal>
-    </div>
+    </Box>
   );
 }

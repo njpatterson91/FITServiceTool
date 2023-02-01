@@ -17,6 +17,7 @@ export default function Notes() {
           label="Notes"
           name="notes"
           multiline
+          overflow
           rows={7}
           onChange={onChangeHandler}
           value={customer["notes"]}

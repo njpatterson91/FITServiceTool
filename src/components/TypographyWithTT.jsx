@@ -1,21 +1,16 @@
-import { Typography } from "@mui/material";
-import HelpIcon from "@mui/icons-material/Help";
-import { imageToolTip, imageLocation } from "../store/atoms";
-import { useSetRecoilState } from "recoil";
+import { Typography, Box } from "@mui/material";
 
 export default function TypographyWithTT(props) {
-  const setOpen = useSetRecoilState(imageToolTip);
-  const setImage = useSetRecoilState(imageLocation);
-
+  const { script } = props
   return (
-    <div
+    <Box
       style={{
-        backgroundColor: props.script.backgroundColor,
+        backgroundColor: script.backgroundColor,
       }}
     >
       <Typography margin padding>
-        {props.script.text}
+        {script.text}
       </Typography>
-    </div>
+    </Box>
   );
 }
